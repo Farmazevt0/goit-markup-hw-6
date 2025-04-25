@@ -21,10 +21,18 @@
     <header class="header">
       <div class="container flex">
         <nav class="header-nav nav-menu">
-          <a href="./index.html" class="header-logo">
-            Web<span class="header-logo-web">Studio</span></a
-          >
-
+          <div class="header-logo-box">
+            <a href="./index.html" class="header-logo">
+              Web<span class="header-logo-web">Studio</span></a
+            >
+            <div class="header-btns">
+              <button type="button" class="header-btns-mob" id="toggleButton">
+                <svg class="" width="24" height="24">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <ul class="header-menu-list menu-list">
             <li class="header-menu-item">
               <a class="header-menu-link header-studio" href="./index.html"
@@ -55,13 +63,81 @@
             </li>
           </ul>
         </address>
+        <div class="mob-menu" id="mob-menu">
+          <button type="button" class="menu-open-btn" id="close-btn">
+            <svg class="menu-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-list menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link header-studio" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mob-menu-contacts">
+            <div class="mobile-contacts">
+              <ul class="menu-contacts-list">
+                <a
+                  class="menu-contacts-address"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+                <a class="menu-contacts-phone" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </ul>
+            </div>
+            <ul class="mob-media-container">
+              <li class="mob-media-item">
+                <a class="mob-container-icon" href="#instagram">
+                  <svg class="mediaicons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-media-item">
+                <a class="mob-container-icon" href="#twitter">
+                  <svg class="mediaicons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-media-item">
+                <a class="mob-container-icon" href="#facebook">
+                  <svg class="mediaicons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-media-item">
+                <a class="mob-container-icon" href="#linkedin">
+                  <svg class="mediaicons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container flex-center">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn btn-one">Order Service</button>
+          <button type="button" class="hero-btn btn-one" id="hero-btn">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -499,9 +575,9 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop" id="backdrop-menu">
       <div class="modal-backdrop">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" id="closeModalBtn">
           <svg class="modal-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -593,5 +669,6 @@
         </form>
       </div>
     </div>
+    <script src="./scrip.js"></script>
   </body>
 </html>
