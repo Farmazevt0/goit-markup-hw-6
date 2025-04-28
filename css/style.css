@@ -610,6 +610,7 @@ p {
 /* Team */
 
 .team {
+  padding: 96px 0;
   background: #f4f4fd;
 }
 
@@ -692,6 +693,7 @@ p {
 @media screen and (min-width: 768px) {
   .team {
     background: #f4f4fd;
+    padding: 96px 0;
   }
   .container-team {
     max-width: 768px;
@@ -714,6 +716,7 @@ p {
     max-width: 1158px;
     padding: 0px;
   }
+
   .team-item {
     background: #ffffff;
     border-radius: 0px 0px 4px 4px;
