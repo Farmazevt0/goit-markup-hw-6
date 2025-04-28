@@ -740,6 +740,8 @@ p {
   justify-content: center;
   gap: 24px;
   row-gap: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .portfolio-logo {
