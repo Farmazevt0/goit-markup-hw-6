@@ -35,8 +35,8 @@ p {
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,6 +69,8 @@ p {
   display: flex;
   padding: 17px 1px;
   justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .header-btns-mob {
   border: none;
@@ -220,6 +222,8 @@ p {
   .header .container {
     display: flex;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .nav-menu {
@@ -491,6 +495,7 @@ p {
   text-align: left;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .about-text {
@@ -499,6 +504,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .about-cont {
@@ -540,6 +547,9 @@ p {
     text-transform: capitalize;
     text-align: left;
     color: #2e2f42;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 8px;
   }
 
   .about-text {
@@ -548,6 +558,8 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .about-cont {
